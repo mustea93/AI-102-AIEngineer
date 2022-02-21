@@ -1,0 +1,32 @@
+cognitive service:
+
+key1
+2e3526367e3647d8975f804b8be7ea34
+
+key2
+aff7509045914cd5b65a89f3598b203a
+
+west europe
+
+https://saloai102.cognitiveservices.azure.com/
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+{
+  "environmentName": "AzureCloud",
+  "homeTenantId": "b223e46c-3b41-4444-b0cb-4ef2636bff52",
+  "id": "0e7ce310-05c0-4edf-a818-cc0fc23ed4a6",
+  "isDefault": true,
+  "managedByTenants": [],
+  "name": "Azure Pass - Sponsorship",
+  "state": "Enabled",
+  "tenantId": "b223e46c-3b41-4444-b0cb-4ef2636bff52",
+  "user": {
+    "name": "m.salihcavus@gmail.com",
+    "type": "user"
+  }
+}
+
+
+-----------------------------------------------------------------------------------------------------------

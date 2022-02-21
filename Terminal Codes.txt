@@ -1,0 +1,113 @@
+curl -X POST "https://saloai102.cognitiveservices.azure.com/text/analytics/v3.0/languages?" -H "Content-Type: application/json" -H "Ocp-Apim-Subscription-Key: 2e3526367e3647d8975f804b8be7ea34" --data-ascii "{'documents':[{'id':1,'text':'hello'}]}"
+
+az cognitiveservices account keys list --name saloai102 --resource-group AI-102
+
+az ad sp create-for-rbac -n "api://ai-app" --role owner --scopes subscriptions/0e7ce310-05c0-4edf-a818-cc0fc23ed4a6/resourceGroups/AI-102
+
+OUTPUT FOR THIS
+
+{
+  "appId": "c0418dbf-aeb5-4a43-96f0-f35d5e4f124f",
+  "displayName": "ai-app",
+  "name": "api://ai-app",
+  "password": "xUaC5Pvvu~uflm5f5oIP~zDZJv5W62YEAD",
+  "tenant": "b223e46c-3b41-4444-b0cb-4ef2636bff52"
+}
+
+
+az ad sp show --id c0418dbf-aeb5-4a43-96f0-f35d5e4f124f --query objectId --out tsv
+756da84a-f6f0-4d3f-8301-91603fe2dc68
+
+
+az keyvault set-policy -n salokeyvalut --object-id 756da84a-f6f0-4d3f-8301-91603fe2dc68 --secret-permissions get list
+{
+  "id": "/subscriptions/0e7ce310-05c0-4edf-a818-cc0fc23ed4a6/resourceGroups/AI-102/providers/Microsoft.KeyVault/vaults/salokeyvault",
+  "location": "westeurope",
+  "name": "salokeyvault",
+  "properties": {
+    "accessPolicies": [
+      {
+        "applicationId": null,
+        "objectId": "fd5209ce-b8eb-42b6-ae6a-e419917ad740",
+        "permissions": {
+          "certificates": [
+            "Get",
+            "List",
+            "Update",
+            "Create",
+            "Import",
+            "Delete",
+            "Recover",
+            "Backup",
+            "Restore",
+            "ManageContacts",
+            "ManageIssuers",
+            "GetIssuers",
+            "ListIssuers",
+            "SetIssuers",
+            "DeleteIssuers"
+          ],
+          "keys": [
+            "Get",
+            "List",
+            "Update",
+            "Create",
+            "Import",
+            "Delete",
+            "Recover",
+            "Backup",
+            "Restore",
+            "GetRotationPolicy",
+            "SetRotationPolicy",
+            "Rotate"
+          ],
+          "secrets": [
+            "Get",
+            "List",
+            "Set",
+            "Delete",
+            "Recover",
+            "Backup",
+            "Restore"
+          ],
+          "storage": null
+        },
+        "tenantId": "b223e46c-3b41-4444-b0cb-4ef2636bff52"
+      },
+      {
+        "applicationId": null,
+        "objectId": "756da84a-f6f0-4d3f-8301-91603fe2dc68",
+        "permissions": {
+          "certificates": null,
+          "keys": null,
+          "secrets": [
+            "list",
+            "get"
+          ],
+          "storage": null
+        },
+        "tenantId": "b223e46c-3b41-4444-b0cb-4ef2636bff52"
+      }
+    ],
+    "createMode": null,
+    "enablePurgeProtection": null,
+    "enableRbacAuthorization": false,
+    "enableSoftDelete": true,
+    "enabledForDeployment": false,
+    "enabledForDiskEncryption": false,
+    "enabledForTemplateDeployment": false,
+    "networkAcls": null,
+    "privateEndpointConnections": null,
+    "provisioningState": "Succeeded",
+    "sku": {
+      "family": "A",
+      "name": "Standard"
+    },
+    "softDeleteRetentionInDays": 90,
+    "tenantId": "b223e46c-3b41-4444-b0cb-4ef2636bff52",
+    "vaultUri": "https://salokeyvault.vault.azure.net/"
+  },
+  "resourceGroup": "AI-102",
+  "tags": {},
+  "type": "Microsoft.KeyVault/vaults"
+}
