@@ -23,7 +23,13 @@ adfa46b543864964a34dd6ee1b118d02
 
 https://salolanguageunderstanding.cognitiveservices.azure.com/
 
+luis module 11 speech priming credentials
 
+app id e30bb76e-b31e-4120-b3bd-b71f03d5c96f
+
+https://salolanguageunderstanding.cognitiveservices.azure.com/
+adfa46b543864964a34dd6ee1b118d02
+09cfbec772b04b69ae19752fe831d473
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
