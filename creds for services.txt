@@ -7,6 +7,7 @@ key2
 aff7509045914cd5b65a89f3598b203a
 
 west europe
+WestEurope
 
 https://saloai102.cognitiveservices.azure.com/
 
