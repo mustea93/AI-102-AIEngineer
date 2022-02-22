@@ -11,6 +11,20 @@ WestEurope
 
 https://saloai102.cognitiveservices.azure.com/
 
+salolanguageunderstanding-Authoring
+
+app id for luis clock 78c77e25-3b2f-470a-8d00-a5cfd8be9749
+
+luis keys prediction
+
+adfa46b543864964a34dd6ee1b118d02
+
+09cfbec772b04b69ae19752fe831d473
+
+https://salolanguageunderstanding.cognitiveservices.azure.com/
+
+
+
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
 

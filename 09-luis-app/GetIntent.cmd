@@ -1,9 +1,9 @@
 @echo off
 
 rem Set values for your Language Understanding app
-set app_id=YOUR_APP_ID
-set endpoint=YOUR_ENDPOINT
-set key=YOUR_KEY
+set app_id=78c77e25-3b2f-470a-8d00-a5cfd8be9749
+set endpoint=https://salolanguageunderstanding.cognitiveservices.azure.com/
+set key=adfa46b543864964a34dd6ee1b118d02
 
 rem Get parameter and encode spaces for URL
 set input=%1
