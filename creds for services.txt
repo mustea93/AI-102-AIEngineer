@@ -44,6 +44,19 @@ curl -X POST "https://saloquestionanswering2.cognitiveservices.azure.com/languag
 
 video analyzer account id 0c7501ad-6f84-49f5-9bb9-2ac9a417a5e4 key 63f48c12dc5549a7a64e187a6ca4f427
 
+---------------------------------------------------------------------------------------------------------------
+
+custom vision prediction creds:
+https://salocustomvision-prediction.cognitiveservices.azure.com/  11b81acea1924cf6a9b59e77afbeace2
+
+custom vision training creds:
+https://salocustomvision.cognitiveservices.azure.com/  ba7b1388840944dcbb3bf44faabc0432
+
+custom vision fruit classifier project id b4201ed6-b022-4a40-8cf0-cee382a8cbd1
+
+custom vision object detection project id 5290cef8-ba1c-4205-a13d-118f2e969eab
+
+
 {
   "environmentName": "AzureCloud",
   "homeTenantId": "b223e46c-3b41-4444-b0cb-4ef2636bff52",
