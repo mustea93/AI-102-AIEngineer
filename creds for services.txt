@@ -42,6 +42,7 @@ sample request
 curl -X POST "https://saloquestionanswering2.cognitiveservices.azure.com/language/:query-knowledgebases?projectName=LearnFAQ&api-version=2021-10-01&deploymentName=production" -H "Ocp-Apim-Subscription-Key: d41e499bdfbe4eb2af0bec85a32a3f93" -H "Content-Type: application/json" -d "{\"top\":3,\"question\":\"YOUR_QUESTION_HERE\",\"includeUnstructuredSources\":true,\"confidenceScoreThreshold\":\"YOUR_SCORE_THRESHOLD_HERE\",\"answerSpanRequest\":{\"enable\":true,\"topAnswersWithSpan\":1,\"confidenceScoreThreshold\":\"YOUR_SCORE_THRESHOLD_HERE\"},\"filters\":{\"metadataFilter\":{\"logicalOperation\":\"YOUR_LOGICAL_OPERATION_HERE\",\"metadata\":[{\"key\":\"YOUR_ADDITIONAL_PROP_KEY_HERE\",\"value\":\"YOUR_ADDITIONAL_PROP_VALUE_HERE\"}]}}}"
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
+video analyzer account id 0c7501ad-6f84-49f5-9bb9-2ac9a417a5e4 key 63f48c12dc5549a7a64e187a6ca4f427
 
 {
   "environmentName": "AzureCloud",
