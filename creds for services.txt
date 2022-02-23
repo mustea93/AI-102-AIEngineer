@@ -60,6 +60,18 @@ form recognizer endpoint https://saloformrecognizer.cognitiveservices.azure.com/
 form recognizer SAS URI: https://ai102form1438430408.blob.core.windows.net/sampleforms?se=2023-01-01T00%3A00%3A00Z&sp=rwl&sv=2018-11-09&sr=c&sig=ONa2Ct/QFLG3AqlG8cp08nKLuDxJLQaUsQ3eFP%2BscTw%3D
 Model ID: e9b235df-aaba-4b2a-9c9f-baac0b1140c7
 MODEL ID 2 FOR WITH LABELS: f5de52a5-388a-4b26-8c5d-88dfdc99e14e
+
+
+
+storage accountName ai102form1438430408 subs id 0e7ce310-05c0-4edf-a818-cc0fc23ed4a6 key NWZz1qvi833lnjXPBCYqDrzie4oEwd3cFOo5rq0gnuBbYFHguuHqYjC3KpD0mgRfBbmue7QRl4CR/BuS7HjwcQ==
+
+
+search service https://saloquestionanswering2-asnsu3tmg2vjapm.search.windows.net 4BC7A7E72B9A87931D2F31CC6CE9317D query key 1861287E9288D36A0D02D97EF9A42D81
+
+
+word count url https://salosearchwordcountfunctionapp.azurewebsites.net/api/wordcount?code=LKOsMCofKSJtloS2rMYq0VZ3fQ9agPftTSitoc4zFW6aHm/QpqwKNg==
+
+
 {
   "environmentName": "AzureCloud",
   "homeTenantId": "b223e46c-3b41-4444-b0cb-4ef2636bff52",
